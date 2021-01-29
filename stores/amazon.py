@@ -1,4 +1,4 @@
-import json
+﻿import json
 import math
 import os
 import platform
@@ -622,7 +622,7 @@ class Amazon:
         timeout = self.get_timeout()
         while True:
             prices = self.driver.find_elements_by_xpath(
-                '//*[@class="a-size-large a-color-price olpOfferPrice a-text-bold"]'
+                '//*[@class="a-size-medium a-color-price priceBlockBuyingPriceString"]' '//*[@id="priceblock_ourprice"]'
             )
             if prices:
                 break
